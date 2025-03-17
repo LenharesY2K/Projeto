@@ -12,7 +12,11 @@ namespace Projeto.Controllers
         {
             _logger = logger;
         }
-
+        //para criar uma nova tela, crie um novo metodo abaixo
+        public IActionResult PedroLenhares()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
