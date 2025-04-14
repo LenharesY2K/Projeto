@@ -1,4 +1,6 @@
-﻿<form action="" method="post">
+﻿@model LoginModel
+
+<form action="" method="post">
 <label>Email</label>
 <input type="email" name="email" value=""/>
 <br/><br />
@@ -9,3 +11,7 @@
 	Logar
 </button>
 </form>
+<h1>@Model.Login</h1>
+
+<h1>@Model.Password</h1>
+<br /><br />
