@@ -6,13 +6,13 @@
     <title>@ViewData["Title"] - Projeto</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Projeto.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PW3.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Projeto</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PW3</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,52 +26,57 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/Home/PedroLenhares">
-                                Tela Adicionada</a>
-                                </li>
+                            <a class="nav-link text-dark" href="/Login/Logar">
+                                Login
+                            </a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cursos" asp-action="Index">
+                            <a class="nav-link text-dark" href="/Home/Fernando">
+                                Tela adicionada
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               asp-area=""
+                               asp-controller="Cursos"
+                               asp-action="Index">
                                 Cursos
                             </a>
-                            </li>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Professores" asp-action="Index">
+                            <a class="nav-link text-dark"
+                               href="/Professores/Index">
                                 Professores
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="DiaSemana" asp-action="Index">
-                                DiaSemana
-                            </a>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Disciplinas" asp-action="Index">
+                            <a class="nav-link text-dark"
+                               href="/Disciplinas/Index">
                                 Disciplinas
-                            </a>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Horarios" asp-action="Index">
-                                Horarios
-                            </a>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logar">
-                                Login
-                            </a>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="MapaSala" asp-action="Index">
-                                Mapa de Sala
-                            </a>
-                            </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Sala" asp-action="Index">
-                                Sala
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">
-                                Users
+                            <a class="nav-link text-dark"
+                               href="/Salas/Index">
+                                Salas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               href="/DiaSemana/Index">
+                                Dias da Semana
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               href="/Horarios/Index">
+                                Horarios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               href="/Usuarios/Index">
+                                Usuarios
                             </a>
                         </li>
 
@@ -88,7 +93,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - Projeto - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - PW3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

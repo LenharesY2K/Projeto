@@ -3,32 +3,37 @@
 *@
 @{
 }
-<h1>Users Index</h1>
+@model List<PW3.Entidades.UsuarioEntidade>
+
+<h1> Lista de Usuários</h1>
+<div class="row">
+    <div class="col-2">
+        <a href="/Usuario/Novo" class="btn btn-success">Cadastrar</a>
+        </<div><div class="col-8">
+            <form action="/Usuarios/Index" method="get">
+                <div class="input-group mb-3">
+                    <input name="query" type="text" class="form-control" />
+                    <button class="btn btn-primary" type="submit">
+                        Pesquisar
+                    </button>
+                </div></form>
+        </div></div>
+    </div>
+</div>
+
 <table class="table">
     <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Email</th>
-            <th scope="col"></th>
-            
+        @@ -15,20 +12,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th>1</th>
-            <td>Fernando@fernando.com</td>
-            <td></td>
-        </tr>
-        <tr>
-            
-            <th>2</th>
-            <td>Joao@joao.com.br</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th> 1</th>
-            <td>Clara@clara.com.br</td>
-            <td></td>
-        </tr>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <th>@usuario.Id</th>
+                <td>@usuario.Email</td>
+                <td></td>
+            </tr>
+        }
     </tbody>
 </table>
