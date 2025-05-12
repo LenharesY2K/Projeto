@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Projeto.Controllers
 {
-    public class 
+    public class UsuariosController
         : Controller
     {
         private readonly string connectionString = "Server=localhost;Database=auladb2;Uid=root;Pwd=;";

@@ -24,7 +24,7 @@
 <table class="table">
     <thead>
         @@ -15,20 +12,13 @@
-        </tr>
+        
     </thead>
     <tbody>
         @foreach (var usuario in Model)
@@ -37,3 +37,17 @@
         }
     </tbody>
 </table>
+
+                    <button id="botao" onclick="Piscar()">
+                        Clique aqui para o para piscar
+                    </button>
+                    <script>
+                        function Piscar(){
+                            var botao =document.getElementById("botao")
+                            if(botao.style.backgroundColor='red'){
+                                botao.style.backgroundColor ='blue'
+                            }else{
+                                botao.style.backgroundColor ='red'
+                            }
+                        }
+                    </script>
